@@ -1,16 +1,20 @@
 # Dataset Source
 
-Dataset: Open University Learning Analytics Dataset (OULAD)
+## Dataset
 
-Source:
-https://www.kaggle.com/datasets/rocki37/open-university-learning-analytics-dataset
+Open University Learning Analytics Dataset (OULAD).
 
-Files Used:
-- studentInfo.csv
-- studentAssessment.csv
-- studentRegistration.csv
-- studentVle.csv
+## Source
 
-Note:
-The raw dataset is not included in this repository due to GitHub file size limitations.
-Download the dataset from the source above and place it inside the Students_dataset folder before running the notebook.
+The project currently obtains OULAD from the [Kaggle dataset page](https://www.kaggle.com/datasets/rocki37/open-university-learning-analytics-dataset). Review the dataset's original publication, license, and usage terms before redistribution or reuse.
+
+## Files Required by the Notebook
+
+- `studentInfo.csv`
+- `studentVle.csv`
+- `studentAssessment.csv`
+- `studentRegistration.csv`
+
+## Local Setup
+
+Raw dataset files are not committed to this repository. Download and extract the dataset locally so these files are under `datasets/raw/`, then run `week 2/LearnPulse_Preprocessing.ipynb`.
