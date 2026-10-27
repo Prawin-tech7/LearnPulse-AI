@@ -1,0 +1,21 @@
+{
+  "dataset_records": 32593,
+  "training_records": 26122,
+  "testing_records": 6471,
+  "unique_training_students": 23028,
+  "unique_testing_students": 5757,
+  "student_id_overlap": 0,
+  "features_excluded": [
+    "final_result",
+    "id_student"
+  ],
+  "test_accuracy": 0.6917014371812703,
+  "class_mapping": {
+    "0": "Distinction",
+    "1": "Fail",
+    "2": "Pass",
+    "3": "Withdrawn"
+  },
+  "split_method": "GroupShuffleSplit by id_student",
+  "random_state": 42
+}

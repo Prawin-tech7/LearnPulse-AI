@@ -1,0 +1,33 @@
+{
+  "cutoff_day": 60,
+  "eligible_records": 26361,
+  "training_records": 21067,
+  "testing_records": 5294,
+  "student_id_overlap": 0,
+  "accuracy": 0.5714015867019268,
+  "excluded_features": [
+    "final_result",
+    "id_student",
+    "date_unregistration"
+  ],
+  "categorical_features": [
+    "code_module",
+    "code_presentation",
+    "gender",
+    "region",
+    "highest_education",
+    "imd_band",
+    "age_band",
+    "disability"
+  ],
+  "numeric_features": [
+    "num_of_prev_attempts",
+    "studied_credits",
+    "total_clicks_early",
+    "avg_clicks_early",
+    "average_score_early",
+    "assessment_count_early"
+  ],
+  "split_method": "GroupShuffleSplit by id_student",
+  "random_state": 42
+}

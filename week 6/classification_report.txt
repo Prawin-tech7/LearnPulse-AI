@@ -1,0 +1,18 @@
+Accuracy: 0.6917
+
+              precision    recall  f1-score   support
+
+ Distinction       0.63      0.45      0.52       591
+        Fail       0.57      0.38      0.46      1443
+        Pass       0.72      0.90      0.80      2482
+   Withdrawn       0.73      0.73      0.73      1955
+
+    accuracy                           0.69      6471
+   macro avg       0.66      0.61      0.63      6471
+weighted avg       0.68      0.69      0.68      6471
+
+Confusion matrix:
+[[ 264    1  324    2]
+ [   4  555  379  505]
+ [ 128   85 2238   31]
+ [  22  325  189 1419]]
