@@ -1,0 +1,42 @@
+LearnPulse AI — Binary Early-Warning Evaluation
+
+Target: Fail or Withdrawn = at risk; others = not at risk
+Rows: 27613
+Unique students: 24905
+Student overlap: 0
+
+Baseline metrics:
+Accuracy: 0.5464
+Balanced accuracy: 0.5000
+At-risk precision: 0.0000
+At-risk recall: 0.0000
+At-risk F1: 0.0000
+Macro F1: 0.3533
+
+Random Forest metrics:
+Accuracy: 0.6873
+Balanced accuracy: 0.6800
+At-risk precision: 0.6741
+At-risk recall: 0.6013
+At-risk F1: 0.6356
+Macro F1: 0.6809
+
+Classification report:
+              precision    recall  f1-score   support
+
+ Not at risk       0.70      0.76      0.73      3009
+     At risk       0.67      0.60      0.64      2498
+
+    accuracy                           0.69      5507
+   macro avg       0.69      0.68      0.68      5507
+weighted avg       0.69      0.69      0.69      5507
+
+Confusion matrix (actual rows, predicted columns):
+[[2283  726]
+ [ 996 1502]]
+
+Five-fold grouped CV (training data):
+balanced_accuracy: mean=0.6721, std=0.0065
+f1_macro: mean=0.6730, std=0.0064
+recall: mean=0.6014, std=0.0144
+precision: mean=0.6475, std=0.0057

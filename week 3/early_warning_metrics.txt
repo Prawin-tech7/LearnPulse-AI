@@ -1,0 +1,64 @@
+LEARNPULSE AI - DAY-30 EARLY-WARNING EVALUATION
+=======================================================
+Dataset rows: 27613
+Unique students: 24905
+Training rows: 22106
+Test rows: 5507
+Student overlap: 0
+Accuracy: 0.4411
+Balanced accuracy: 0.3875
+Macro F1: 0.3873
+
+Classification report:
+              precision    recall  f1-score   support
+
+ Distinction       0.26      0.28      0.27       598
+        Fail       0.42      0.41      0.42      1454
+        Pass       0.54      0.56      0.55      2411
+   Withdrawn       0.34      0.29      0.31      1044
+
+    accuracy                           0.44      5507
+   macro avg       0.39      0.39      0.39      5507
+weighted avg       0.44      0.44      0.44      5507
+
+Confusion matrix (actual rows, predicted columns):
+[[ 170   58  327   43]
+ [  75  600  481  298]
+ [ 350  448 1355  258]
+ [  66  313  361  304]]
+
+Group-aware cross-validation:
+accuracy: mean=0.4464, std=0.0054
+balanced_accuracy: mean=0.3936, std=0.0071
+macro_f1: mean=0.3924, std=0.0072
+
+Features:
+code_module, code_presentation, gender, region, highest_education, imd_band, age_band, num_of_prev_attempts, studied_credits, disability, total_clicks_30d, active_days_30d, assessments_submitted_30d
+
+Excluded features:
+final_result, id_student, average_score_30d
+
+Limitations:
+- Day-30 date conventions must be verified.
+- Assessment scores excluded pending availability verification.
+- Group splitting prevents student overlap across partitions.
+- Results are experimental and do not establish causation.
+- Performance should be assessed before real-world use.
+
+Top feature importance:
+                                feature  importance
+              numeric__total_clicks_30d    0.173354
+               numeric__active_days_30d    0.140898
+               numeric__studied_credits    0.056977
+   categorical__code_presentation_2014J    0.020059
+           categorical__imd_band_30-40%    0.019491
+   categorical__code_presentation_2014B    0.019122
+   categorical__code_presentation_2013J    0.018666
+          numeric__num_of_prev_attempts    0.017455
+categorical__region_East Anglian Region    0.017219
+           categorical__imd_band_20-30%    0.016967
+           categorical__region_Scotland    0.016765
+             categorical__age_band_0-35    0.016302
+           categorical__imd_band_40-50%    0.016299
+            categorical__age_band_35-55    0.016246
+           categorical__imd_band_50-60%    0.016183
